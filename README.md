@@ -43,3 +43,4 @@ projects have no sky or floor, so passthrough stays visible, and a
 
 - Minimal scene walkthrough: https://iwsdk.dev/guides/01b-minimal-scene.html
 - XR-enabled projects — IWER emulator controls: https://iwsdk.dev/guides/02-testing-experience.html#iwer-controls
+mellow-kangaroo-e60853.netlify.app/
