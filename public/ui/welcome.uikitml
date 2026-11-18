@@ -1,0 +1,80 @@
+<!--
+  Panel, Button, ButtonIcon, and ButtonLabel come from the bundled Horizon kit.
+  RectangleGoggles and LogIn are bundled Lucide icon components. The :dark
+  styles apply because iwsdk.config.json prefers the dark color scheme.
+-->
+<style>
+  .panel-root {
+    flex-direction: column;
+    width: 420px;
+  }
+
+  .panel-content {
+    flex-direction: column;
+    gap: 7px;
+    padding: 22px;
+  }
+
+  .eyebrow {
+    color: #0284c7;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+
+  .eyebrow:dark {
+    color: #38bdf8;
+  }
+
+  .heading {
+    color: #1c1d20;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+
+  .heading:dark {
+    color: #fafaf7;
+  }
+
+  .body {
+    color: #3a3b40;
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  .body:dark {
+    color: #dddfe3;
+  }
+
+  .button {
+    justify-content: flex-start;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 22px;
+  }
+
+  .button-label {
+    transform-translate-y: 1px;
+  }
+</style>
+<Panel class="panel-root">
+  <div class="panel-content">
+    <div class="eyebrow">SPATIAL AI WORKSPACE</div>
+    <div class="heading">index</div>
+    <div class="body">Turn spoken thoughts into</div>
+    <div class="body">organized 3D action pillars.</div>
+  </div>
+  <Button id="xr-button" class="button">
+    <ButtonIcon>
+      <RectangleGoggles></RectangleGoggles>
+    </ButtonIcon>
+    <ButtonLabel class="button-label">Enter XR</ButtonLabel>
+  </Button>
+  <Button id="exit-button" class="button" style="display: none">
+    <ButtonIcon>
+      <LogIn></LogIn>
+    </ButtonIcon>
+    <ButtonLabel class="button-label">Exit to Browser</ButtonLabel>
+  </Button>
+</Panel>
